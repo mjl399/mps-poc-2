@@ -24,7 +24,7 @@ const CardHeader = React.forwardRef<HTMLDivElement, CardHeaderProps>(
   ({ className, action, children, ...props }, ref) => (
     <div
       ref={ref}
-      className={cn("flex items-center gap-1.5 p-6", className)}
+      className={cn("flex w-full items-center gap-1.5 p-6", className)}
       {...props}
     >
       <div className="flex flex-1 flex-col gap-1.5 min-w-0">{children}</div>
@@ -72,7 +72,7 @@ const CardFooter = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("flex flex-col items-center gap-4 px-6 pb-6 pt-0", className)}
+    className={cn("flex w-full flex-col items-center gap-4 px-6 pb-6 pt-0", className)}
     {...props}
   />
 ))
